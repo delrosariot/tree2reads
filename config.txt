@@ -1,0 +1,2 @@
+#Path where the NEAT folder is located
+Neat = "/Accounts/delrosariot/Desktop/tree2reads/NEAT"

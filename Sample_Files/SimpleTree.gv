@@ -1,0 +1,5 @@
+graph {
+    root -- mut1;
+    mut1 -- mut2;
+    mut1 -- mut3;
+}
