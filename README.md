@@ -5,8 +5,7 @@ This pipeline allows the user to simulate data for a heterogeneous tumor using a
 
 Tree2Reads takes as input a reference file from which to generate the reads, along with a list of the percents associated with each of the nodes, a tree of the mutations to be generated, and two sets of VCFs. The program parses through the dot file that represents the tree and outputs all of the nodes/mutations. This list is then used to generate a VCF for each of the nodes, taking into account the variants inserted in their ancestor(s) and including them into this new VCF. Once all of these VCFs are generated, the pipeline uses NEAT genreads to generate reads. This program takes as input a VCF file and a reference FASTA and outputs a FASTQ file with the reads. Once all of the FASTQ files are generated, the pipeline uses a merger script to put all of the FASTQs into a single FASTQ with the correct percentage of each mutation (provided as input by the user in a percents.txt file). The percentage taken from each FASTQ depends on what the user inputs for final coverage and average read length. 
 
-
-![Flowchart with the process of converting a tree into a set of reads] (Sample_Files/Tree2Reads.png "Flowchart with the process of converting a tree into a set of reads")
+![Flowchart with the process of converting a tree into a set of reads](https://github.com/delrosariot/tree2reads/blob/master/Sample_Files/Tree2Reads.png "Flowchart with the process of converting a tree into a set of reads")
 ---
 
 ## Requirements
